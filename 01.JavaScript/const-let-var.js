@@ -39,23 +39,24 @@ function myFunc() {
 
 // << example 2 - deference between let/const and var >>
 
-// function example() {
-//   if (true) {
-//     let ex = 5;
-//   }
-
-//   return ex; // can't be accessed inside the block
-// }
-
 function example() {
-  var ex; // => undefined
-  if (false) {
-    ex = 5;
+  if (true) {
+    let ex = 5;
   }
 
-  return ex;
+  return ex; // => ex is not defined: can't be accessed inside the block
 }
 console.log(example());
+
+// function example() {
+//   var ex; // => undefined
+//   if (false) {
+//     ex = 5;
+//   }
+
+//   return ex;
+// }
+// console.log(example());
 // if false, undefined will be returned
 // if true, 5 will be returned
 
