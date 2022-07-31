@@ -1,0 +1,22 @@
+** JavaScript Data Types **
+
+JavaScript has several data types, and most are primitive.
+
+Primitive values
+- Boolean
+- Number
+- Null
+    an empty value user assigned
+- Undefined
+    no value
+- String
+
+Non-Primitive values
+- Object including Array
+
+
+Additional data structure
+- Maps
+- Sets
+
+You can use the JavaScript typeof operator to find the type of a JavaScript variable.
