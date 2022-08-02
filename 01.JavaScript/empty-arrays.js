@@ -1,6 +1,7 @@
 /*
 
 How do you make empty arrays?
+- Simply re-declare the empty array or define the length 0 or use splice method.
 
 */
 
