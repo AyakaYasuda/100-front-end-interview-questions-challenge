@@ -1,0 +1,24 @@
+<!-- 
+
+How do you maintain states in your application?
+- You can use the local storage where you can store key value pairs in the browser and get that out of the browser as well.
+- There's also a way to store using cookies as session storage.
+
+-->
+
+<html>
+  <head>
+    <script>
+      const user = JSON.stringify({
+        firstName: 'Dylan',
+        lastName: 'Israel',
+      });
+
+      localStorage.setItem('user', user);
+
+      console.log(JSON.parse(localStorage.getItem('user')));
+    </script>
+  </head>
+
+  <body></body>
+</html>
