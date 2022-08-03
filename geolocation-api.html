@@ -1,0 +1,26 @@
+<!-- 
+    
+What is the HTML Geolocation API?
+- The Geolocation API is used to get the geographical location of a user.
+- The data is not available unless the user approves it on the browser. 
+
+-->
+
+<html>
+  <head>
+    <script>
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            console.log('Got Location', pos);
+          },
+          () => {
+            console.log('nope');
+          }
+        );
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>
