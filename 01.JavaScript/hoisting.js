@@ -4,7 +4,7 @@ What's Hoisting?
 - Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope. 
 
 Behavior of variables with let and const
-- Variables defined with ler and const are hoisted to the top of the block, but not initialized.
+- Variables defined with let and const are hoisted to the top of the block, but not initialized.
 
 Point
 - JavaScript only hoists declarations, not initializations: JavaScript is aware of variables but doesn't know what value is before initialization.
