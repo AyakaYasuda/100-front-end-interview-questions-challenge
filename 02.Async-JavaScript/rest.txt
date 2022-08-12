@@ -1,0 +1,32 @@
+What is an API?
+- An application programming interface allows an application to communicate with other application.
+
+
+What is REST?
+
+- REpresentational State Transfer is a software architecture that imposes conditions on how APIs should work.
+- APIs that follows the REST architecture style are called REST or RESTful APIs.
+- To be a RESTful API, an API must adhere certain principals including:
+    uniform interface
+        - For example, request should identify resources by using URI.
+    statelessness
+        - The server completes every client's request independently.
+    cacheablility
+        - Clients can cache responses
+    client-server
+        - The interface is separated from the backend and data storage. This allows APIs to be flexible and scalable.
+
+
+How do RESTful APIs work?
+
+1. The client sends a request to the server.
+2. The server authenticates the client and confirms that the client has the right to make that request.
+3. The server receives the request and processes it internally.
+4. The server returns a response to the client. The response contains information that tells the client whether the request was successful. It also contains information that the client requested.
+
+
+What does the RESTful API client request contain?
+
+1. URI: unique resources identifier - REST APIs typically uses URL and it specifies the path to the resource.
+2. Method: GET, POST, PUT, PATCH, DELETE - tell the server what it needs to do to the resource.
+3. HTTP headers: metadata exchanged between the client and server. For example, it indicates the format of the request and response.

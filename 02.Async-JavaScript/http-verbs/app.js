@@ -4,12 +4,12 @@ What are HTTP verbs?
 - The most commonly used HTTP verbs are POST, GET, PUT, PATCH, and DELETE.
 - These correspond to create, read, update and delete operations respectively.
 - The POST verb is used to create new resource. It returns 201 status on successful creation.
-- The GET verb is used to read a representation of a resource. It returns XML or JSON data or 200 status code.
+- The GET verb is used to retrieve a specific resource or a collection of resources. It returns XML or JSON data or 200 status code.
   In an error case, it often returns 404 status code, or 400(NOT FOUND) status code(BAD REQUEST).
-- The PUT verb is used to update a representation of the original resource. It returns 200 status code or 204 status code on successful update.
+- The PUT verb is used to update a specific resource. It returns 200 status code or 204 status code on successful update.
 - The PUT verb can also be used to create new resource in case the resource ID is chosen by the client.
-- The PATCH verb is used to update resource, but it's different to the PUT verb as it modifies part of the existing resource instead of replacing all resource.
-- The DELETE verb is used to delete resource identified by a URL. It returns 200 status code.
+- The PATCH verb is used to update a specific resource, but it's different to the PUT verb as it modifies part of the existing resource instead of replacing all resource.
+- The DELETE verb is used to delete a specific resource identified by a URL. It returns 200 status code.
 
 */
 
