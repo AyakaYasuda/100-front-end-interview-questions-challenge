@@ -3,7 +3,7 @@
 What are a promise?
 
 - A promise is an object returned by an asynchronous function, which allows you to write asynchronous program more easily and readable.
-- A Promise can be three types of state: pending, fulfilled, rejected.
+- A Promise can be one of three states: pending, fulfilled, rejected.
 - A Promise takes a callback function and it takes tho parameters: resolve and reject
 - When a promise is fulfilled, resolve is executed and the code inside then is executed.
 - When something wrong happens and a promise is rejected, reject is executed and the code inside catch is executed.
