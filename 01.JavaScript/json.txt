@@ -1,0 +1,9 @@
+What is JSON?
+
+- JSON stans for JavaScript Object Notation and is a lightweight format for storing and transporting data.
+- JSON is often used when data is sent from the server to web page.
+- JSON syntax rules include:
+    name/value pairs, 
+    data is separated by commas,
+    curly braces hold objects,
+    square brackets hold arrays
