@@ -1,0 +1,14 @@
+What is asynchronous?
+
+- Asynchronous is a technique that enables your program to start a potentially long-running task and still be able be responsive to other events while that task runs, rather than having to wait until the task has finished.
+
+
+why do you need asynchronous?
+
+- In synchronous program, the browser steps through the program one line at time, in the order we wrote it. At each point, the browser waits for the line to finish its work before going on to the next line. For example, when fetching data from an API, it potentially takes time, waiting for it to finish and then executing the next line is not efficient. In such case, asynchronous programming allows your program to do multiple tasks at the same time, so the browser can do another task while fetching data.
+
+
+When do you use asynchronous functions?
+
+- The most common use of asynchronous functions is to make a call to an API.
+- Another use case is to make delay intentionally in the app to help users understand what's going on and feel comfortable using the app.
