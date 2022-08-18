@@ -80,3 +80,7 @@ Other methods
 - componentWillUnmount: immediately before removing component from DOM
 
 
+10. A few technologies to optimize React app performance
+- using useMemo() hook for CPU-expensive functions to gets called once by caching them
+- lazy loading for reducing the load time of a React app
+- moving state as close to where you need it as possible

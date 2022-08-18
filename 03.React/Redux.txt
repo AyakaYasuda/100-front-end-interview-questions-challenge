@@ -1,0 +1,41 @@
+State Management
+- the more an application grows in size, the more its complexity and data grow, and managing the application state becomes increasingly difficult and cumbersome
+- you might wonder when to pass props, to which component, and how to pass them
+
+
+What is Redux?
+- a state management tool that you can use in any javascript project
+- controls global states in just 1 object, and stores it in the store, which is easily accessible
+- if you change 1 state used in redux, it will update multiple places at once
+- Redux helps you manage "global" state - state that is needed across many parts of your application
+
+
+When do you need Redux?
+- you have large amount of application state that are needed in many places in the app
+- the app state is updated frequently over time
+- the logic to update the state may be complex
+- the app has a medium or large-sized codebase, and might be worked on by many people
+
+
+Principles of Redux
+- store has the latest updated state
+- only way to update state is to dispatch Action
+- reducer can't update state on its own accord
+
+
+How does React work?
+1. we start by defining an initial state value
+2. we define a reducer function which receives two arguments, the current state and action object describing how to update the state
+3. In reducers, we either need to return brand-new object to be the new state, or return the existing state object if nothing should change based on the type of the action,
+4. now that we have a reducer function, we can create a store instance by calling the Redux library createStore API
+5. we pass the reducer function to createStore, so the store uses the initial state and calculate any further updates
+6. preparation is done
+7. UI is showing the initial state in the application by taking it using store.getState or useSelector hook
+8. in order to update state, we create action objects that describe what happened and dispatch them to the store
+
+
+How do you use Redux with React?
+- pass the store with Provider
+    we need to specifically tell React-Redux what store we want to use in our components by rendering <Provider> component around our entire <App> and passing the Redux store as a prop to <Provider>
+- read state from the store with useSelector hook
+- dispatch actions with useDispatch hook

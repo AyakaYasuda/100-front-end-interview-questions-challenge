@@ -27,3 +27,7 @@ The use of useEffect hook
 The use of useContext hook
 - accepts a context object(the value returned from React.createContext) and returns the current context value for the context
 - the current context value is determined by the value prop of the nearest <MyContext.Provider>
+
+
+The use of custom hooks
+- a custom hook is a function whose name starts with use and allows us to extract some components logic into a reusable function
