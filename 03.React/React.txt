@@ -1,0 +1,82 @@
+1. What is React?
+- an open-source JavaScript library for building interactive UIs
+- developed and sponsored by Facebook
+
+
+2. What does React do?
+- builds components, which is reusable pieces of JavaScript logic, HTML and CSS combined into one modular component
+- makes it easy to synchronize an application's data and contents that users can see
+- efficiently updates and renders just the "right" things when data changes 
+
+
+3. Differences between React JS and Vanilla JS
+
+< Vanilla JS >
+- applications start with the initial UI that is created on the HTML
+- data is stored in DOM
+- developers update the UI with help of DOM as they have to manually remove or update elements
+
+< React >
+- applications start with a blanc HTML and later UIs get defined in the browser and then get loaded into the blanc container 
+- data will be directly stored in regular javascript variables
+- automatically updates UIs by using the setting of changing state within the component
+
+
+4. Benefits to use React over Vanilla JS
+- React allows us to reuse components that you have built once
+- React makes it easier to handle with UI state by storing data in regular JS variables
+- React split your app into components and those components maintains all the code needed for display and updates, which makes the app easier to understand
+- React has a strong community support
+
+
+5. What are props and states in React?
+- both are plain javascript objects and hold information that influences the output of render
+- props are passed to the component
+- state is manages within the component
+
+
+6. How does React work?
+
+< rendering elements >
+- elements are the smallest building blocks of React apps and plane objects. (elements are what components are made of)
+    ex. const element = <h1>Hello World</h1>;
+- elements are written in JSX, a syntax extension to JavaScript which looks like a template language, but it allows us to write JavaScript inside HTML element by wrapping it in curly braces 
+    *JSX is not supported by any browsers, so Babel in webpack converts JSX into JavaScript object in a way that browsers can read
+
+- there is a <div> tag with root id in HTML file, which is called "root" DOM node because everything inside it will be managed by React DOM
+- to render a React element, first pass the DOM element to ReactDOM.createRoot(), then pass the React element to root.render()
+- the virtual DOM will be converted to the node tree with render() function, and will be read by the react application
+
+< re-rendering elements >
+- for every DOM object, there is a corresponding virtual DOM object, which has the same properties like a blueprint od the real DOM object
+- main difference of real DOM and virtual DOM is that any changes in virtual DOM will not reflect on the web page directly.
+- whenever a JSX element gets rendered, every virtual DOM gets updated, which is much faster than updating real DOM
+- React uses two virtual DOM: one is for storing current state, the other one is for storing previous state
+- whenever virtual DOM gets updated, react renders only those objects inside the real DOM instead of rendering the complete real DOM
+
+
+7. Components
+- components are independent and reusable bits of code. 
+- components let you split the UI into independent, reusable pieces, and think about each piece in isolation
+- components come in two types, class components and functional components
+- after the introduction of Hooks, functional components are equivalent to class components
+
+
+8. Lifecycle stages
+- before React 16.4, initialization -> mounting -> updating -> unmounting
+- after React 16.4, mounting -> updating -> unmounting
+
+
+9. Lifecycle methods
+- after React updates DOM and refs, in mounting stage componentDidMount is executed, in updating stage componentDidUpdate is executed, in unmounting stage componentWillUnMount is executed
+
+Other methods
+- componentWillMount: immediately before initial rendering
+- componentDidMount: immediately after initial rendering
+- componentWillReceiveProps: when component receives new props
+- shouldComponentUpdate: before rendering, after receiving new props or state (return false to prevent rendering)
+- componentWillUpdate: before rendering, after receiving new props or state
+- componentDidUpdate: after component updates are flushed to DOM
+- componentWillUnmount: immediately before removing component from DOM
+
+
