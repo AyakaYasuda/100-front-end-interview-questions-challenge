@@ -1,20 +1,20 @@
-What are hooks?
+1. What are hooks?
 - react hooks are built-in functions that allows us to use the state and lifestyle methods within React components
 - each lifecycle of a component is having 3 phases which include mount, unmount, and update
 - using hook, all features of React can be used without writing class components
 
 
-What are rules of hooks?
+2. What are rules of hooks?
 - only call hooks at the top level, which means we can't call hooks inside loops, conditions, or nested functions
 - only call hooks from functional components
 
 
-The use of useState hook
+3. The use of useState hook
 - the useState hook lets us define and update a state
 - returns a stateful value and a function to update it
 
 
-The use of useEffect hook
+4. The use of useEffect hook
 - the useEffect hook tells React that the component needs to do something after rendering
 - React will remember the function you passed, and call it later after DOM updated
 - by default, it runs both after the first render and after every update
@@ -24,10 +24,10 @@ The use of useEffect hook
 - the useEffect hook may return a clean-up function that runs before the component is removed from the UI
 
 
-The use of useContext hook
+5. The use of useContext hook
 - accepts a context object(the value returned from React.createContext) and returns the current context value for the context
 - the current context value is determined by the value prop of the nearest <MyContext.Provider>
 
 
-The use of custom hooks
+6. The use of custom hooks
 - a custom hook is a function whose name starts with use and allows us to extract some components logic into a reusable function

@@ -5,8 +5,9 @@
 
 2. What does React do?
 - builds components, which is reusable pieces of JavaScript logic, HTML and CSS combined into one modular component
-- makes it easy to synchronize an application's data and contents that users can see
 - efficiently updates and renders just the "right" things when data changes 
+- allows us to create single page applications: the idea is the website loads all the HTML/JS the first time you visit and when you navigate, the browser will only render the content without refreshing the website
+- makes user experiences a lot smoother
 
 
 3. Differences between React JS and Vanilla JS
@@ -23,16 +24,16 @@
 
 
 4. Benefits to use React over Vanilla JS
+- React split your app into components and those components maintains all the code needed for display and updates, which makes the app easier to understand
 - React allows us to reuse components that you have built once
 - React makes it easier to handle with UI state by storing data in regular JS variables
-- React split your app into components and those components maintains all the code needed for display and updates, which makes the app easier to understand
 - React has a strong community support
 
 
 5. What are props and states in React?
 - both are plain javascript objects and hold information that influences the output of render
 - props are passed to the component
-- state is manages within the component
+- state is managed within the component
 
 
 6. How does React work?
@@ -44,11 +45,11 @@
     *JSX is not supported by any browsers, so Babel in webpack converts JSX into JavaScript object in a way that browsers can read
 
 - there is a <div> tag with root id in HTML file, which is called "root" DOM node because everything inside it will be managed by React DOM
-- to render a React element, first pass the DOM element to ReactDOM.createRoot(), then pass the React element to root.render()
+- to render a JSX element, first pass the DOM element to ReactDOM.createRoot(), then pass the JSX element to root.render()
 - the virtual DOM will be converted to the node tree with render() function, and will be read by the react application
 
 < re-rendering elements >
-- for every DOM object, there is a corresponding virtual DOM object, which has the same properties like a blueprint od the real DOM object
+- for every DOM object, there is a corresponding virtual DOM object, which has the same properties like a blueprint of the real DOM object
 - main difference of real DOM and virtual DOM is that any changes in virtual DOM will not reflect on the web page directly.
 - whenever a JSX element gets rendered, every virtual DOM gets updated, which is much faster than updating real DOM
 - React uses two virtual DOM: one is for storing current state, the other one is for storing previous state
