@@ -1,6 +1,6 @@
 /*
 
-- const and var were introduced in ES6.
+- const and let were introduced in ES6.
 - The issue that they were trying to solve was that var was using lexical scope and it was causing variable hoisting.
 - const and let use block scope.
 

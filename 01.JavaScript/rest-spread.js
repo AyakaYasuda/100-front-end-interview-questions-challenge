@@ -3,7 +3,7 @@
 What is a rest operator? What is a spread operator?
 - Both of them are features of ES6.
 - A rest operator allows us to pass an indefinite number of arguments as an array to a function.
-- A spread operator allows us to unpack an arrow or an object and copy all or a part of the existing array of object, which makes it easy to duplicate an new array or object.
+- A spread operator allows us to unpack an array or an object and copy all or a part of the existing array of object, which makes it easy to duplicate an new array or object.
 
 */
 

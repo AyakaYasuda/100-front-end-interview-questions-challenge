@@ -1,7 +1,7 @@
 /*
 
 What's a callback?
-- A callback us a function passed as an argument to another function.
+- A callback is a function passed as an argument to another function.
 - Using callbacks, you can control when to execute a function.
 
 When do you use callbacks?
