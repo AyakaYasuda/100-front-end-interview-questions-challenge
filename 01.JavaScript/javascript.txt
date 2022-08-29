@@ -1,3 +1,5 @@
 What is JavaScript?
 
-- JavaScript is a scripting or programming language used both on client-side and server-side that allows you to make web pages interactive.
+- JavaScript is a scripting or programming language used both on client-side and server-side that allows you to implement complex features on web pages
+- Every time a web site does more than just sit there and display static information or you to look at, JavaScript is involved and enables you to implement dynamic behavior.
+- A very common use of JavaScript is to dynamically modify HTML and CSS to update a user interface via DOM APIs.
